@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="icon" href="https://www.elastic.co/favicon.ico" />
 </head>
-<body>
+<body data-region="{{region_slug}}">
   <div class="container">
     <header>
       <img src="/assets/images/elastic-logo.svg" alt="Elastic" class="logo" />
@@ -32,5 +32,27 @@
       </p>
     </footer>
   </div>
+  <script>
+    const region = document.body.dataset.region || 'index';
+
+    function track(payload) {
+      navigator.sendBeacon
+        ? navigator.sendBeacon('/api/track', new Blob([JSON.stringify(payload)], { type: 'application/json' }))
+        : fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), keepalive: true });
+    }
+
+    // Page view
+    track({ type: 'page_view', region, referrer: document.referrer });
+
+    // Link clicks
+    document.querySelectorAll('a.link-button, a.region-card').forEach(a => {
+      a.addEventListener('click', () => track({
+        type: 'link_click',
+        region,
+        link: a.querySelector('span')?.textContent.trim() || a.textContent.trim(),
+        url: a.href
+      }));
+    });
+  </script>
 </body>
 </html>

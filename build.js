@@ -36,11 +36,12 @@ function renderLinks(sections) {
   return html;
 }
 
-function renderPage(name, description, linksHtml) {
+function renderPage(name, description, linksHtml, regionSlug = 'index') {
   return template
     .replace(/{{name}}/g, name)
     .replace(/{{description}}/g, description)
-    .replace(/{{links}}/g, linksHtml);
+    .replace(/{{links}}/g, linksHtml)
+    .replace(/{{region_slug}}/g, regionSlug);
 }
 
 // Build each region page
@@ -53,7 +54,7 @@ for (const file of files) {
   regions.push({ slug, name: data.profile.name, region: data.region });
 
   const linksHtml = renderLinks(data.sections || []);
-  const html = renderPage(data.profile.name, data.profile.description, linksHtml);
+  const html = renderPage(data.profile.name, data.profile.description, linksHtml, slug);
 
   const outDir = path.join(OUTPUT_DIR, slug);
   fs.mkdirSync(outDir, { recursive: true });

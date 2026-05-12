@@ -1,10 +1,18 @@
 {
   "name": "littlelink-elastic",
   "version": "1.0.0",
-  "description": "Elastic Community link pages — one JSON file per region, auto-deployed to Vercel",
+  "description": "Elastic Community link pages — multi-region, auto-deploys to Vercel",
   "scripts": {
     "build": "node build.js",
     "dev": "node build.js && npx serve public -p 3000"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.57.0",
+    "@opentelemetry/resources": "^1.30.0",
+    "@opentelemetry/sdk-trace-base": "^1.30.0",
+    "@opentelemetry/sdk-trace-node": "^1.30.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0"
   },
   "engines": {
     "node": ">=18"
