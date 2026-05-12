@@ -1,0 +1,12 @@
+{
+  "name": "littlelink-elastic",
+  "version": "1.0.0",
+  "description": "Elastic Community link pages — one JSON file per region, auto-deployed to Vercel",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve public -p 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

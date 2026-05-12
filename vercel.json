@@ -1,0 +1,12 @@
+{
+  "buildCommand": "node build.js",
+  "outputDirectory": "public",
+  "framework": null,
+  "rewrites": [
+    { "source": "/india", "destination": "/india/index.html" },
+    { "source": "/europe", "destination": "/europe/index.html" },
+    { "source": "/us", "destination": "/us/index.html" },
+    { "source": "/australia", "destination": "/australia/index.html" },
+    { "source": "/singapore", "destination": "/singapore/index.html" }
+  ]
+}

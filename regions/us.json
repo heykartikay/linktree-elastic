@@ -1,0 +1,26 @@
+{
+  "region": "US",
+  "profile": {
+    "name": "Elastic US User Group",
+    "description": "Learn, connect and grow with the Elastic community across the United States."
+  },
+  "sections": [
+    {
+      "title": "Learn about Elasticsearch",
+      "links": [
+        { "title": "What is Elastic?", "url": "https://www.elastic.co/about" },
+        { "title": "Watch what is Elasticsearch", "url": "https://www.youtube.com/watch?v=IdLWRYn3C1k" },
+        { "title": "Elastic | GitHub", "url": "https://github.com/elastic" },
+        { "title": "Collaborate with the Elastic Community", "url": "https://forms.gle/1q6d89With2pF4BE8" }
+      ]
+    },
+    {
+      "title": "Upcoming Events",
+      "links": []
+    },
+    {
+      "title": "Elastic US User Groups",
+      "links": []
+    }
+  ]
+}

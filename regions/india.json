@@ -1,0 +1,39 @@
+{
+  "region": "India",
+  "profile": {
+    "name": "Elastic India User Group",
+    "description": "Learn, connect and grow with the Elastic community across India."
+  },
+  "sections": [
+    {
+      "title": "Learn about Elasticsearch",
+      "links": [
+        { "title": "What is Elastic?", "url": "https://www.elastic.co/about" },
+        { "title": "Watch what is Elasticsearch", "url": "https://www.youtube.com/watch?v=IdLWRYn3C1k" },
+        { "title": "Elastic | GitHub", "url": "https://github.com/elastic" },
+        { "title": "Collaborate with the Elastic Community", "url": "https://forms.gle/1q6d89With2pF4BE8" }
+      ]
+    },
+    {
+      "title": "Upcoming Events",
+      "links": [
+        { "title": "Elastic Agentic Talks: Building with AI Agents | Virtual | Apr 29th", "url": "https://luma.com/v9kvwgqh?utm_campaign=linkedin&utm_medium=announcement&utm_source=linktree" }
+      ]
+    },
+    {
+      "title": "Elastic India User Groups",
+      "links": [
+        { "title": "Elastic Delhi User Group", "url": "https://www.meetup.com/delhi-elastic-fantastics" },
+        { "title": "Elastic Bangalore User Group", "url": "https://www.meetup.com/elasticsearch-explorers" },
+        { "title": "Elastic Mumbai User Group", "url": "https://www.meetup.com/mumbai-elastic-fantastics" },
+        { "title": "Elastic Chennai User Group", "url": "https://www.meetup.com/chennai-elastic-fantastics" },
+        { "title": "Elastic Pune User Group", "url": "https://www.meetup.com/pune-elasticsearch-meetup" },
+        { "title": "Elastic Kochi User Group", "url": "https://www.meetup.com/elastic-kochi-user-group" },
+        { "title": "Elastic Gujarat User Group", "url": "https://www.meetup.com/gujarat-elastic-fantastics" },
+        { "title": "Elastic Hyderabad User Group", "url": "https://www.meetup.com/hyderabad-elastic-fantastic" },
+        { "title": "Elastic Jaipur User Group", "url": "https://www.meetup.com/elastic-jaipur-user-group" },
+        { "title": "Elastic Kolkata User Group", "url": "https://www.meetup.com/kolkata-city-elastic-fantastics" }
+      ]
+    }
+  ]
+}
