@@ -5,8 +5,8 @@ on:
     paths:
       - 'regions/**.json'
   pull_request:
-    paths:
-      - 'regions/**.json'
+    branches:
+      - main
 
 jobs:
   validate:
