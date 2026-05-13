@@ -7,6 +7,7 @@
     "dev": "node build.js && npx serve public -p 3000"
   },
   "dependencies": {
+    "@elastic/apm-rum": "^5.17.4",
     "@opentelemetry/api": "^1.9.0",
     "@opentelemetry/browser-instrumentation": "^0.5.1",
     "@opentelemetry/exporter-trace-otlp-http": "^0.57.2",
