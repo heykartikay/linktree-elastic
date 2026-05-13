@@ -32,8 +32,8 @@ esbuild.buildSync({
   format:      'iife',
   outfile:     path.join(OUTPUT_DIR, 'assets/js/rum.js'),
   define: {
-    __APM_SERVER_URL__: JSON.stringify(process.env.ELASTIC_APM_SERVER_URL || ''),
-    __APM_API_KEY__:    JSON.stringify(process.env.ELASTIC_APM_API_KEY    || ''),
+    __APM_SERVER_URL__:   JSON.stringify(process.env.ELASTIC_APM_SERVER_URL   || ''),
+    __APM_SECRET_TOKEN__: JSON.stringify(process.env.ELASTIC_APM_SECRET_TOKEN || ''),
   },
 });
 console.log('✓ Bundled RUM script');
