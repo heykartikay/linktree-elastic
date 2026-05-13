@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const esbuild = require('esbuild');
 
 const REGIONS_DIR = './regions';
 const TEMPLATE_FILE = './template.html';
@@ -21,6 +22,21 @@ function copyDir(src, dest) {
 
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 copyDir(ASSETS_SRC, path.join(OUTPUT_DIR, 'assets'));
+
+// Bundle browser RUM script — injects OTLP config from env vars at build time
+esbuild.buildSync({
+  entryPoints: ['assets/js/rum.src.js'],
+  bundle:      true,
+  minify:      true,
+  platform:    'browser',
+  format:      'iife',
+  outfile:     path.join(OUTPUT_DIR, 'assets/js/rum.js'),
+  define: {
+    __OTLP_ENDPOINT__: JSON.stringify(process.env.OTEL_EXPORTER_OTLP_ENDPOINT || ''),
+    __OTLP_HEADERS__:  JSON.stringify(process.env.OTEL_EXPORTER_OTLP_HEADERS  || ''),
+  },
+});
+console.log('✓ Bundled RUM script');
 
 function renderLinks(sections) {
   let html = '';
