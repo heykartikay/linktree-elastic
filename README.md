@@ -1,13 +1,13 @@
-# Elastic Community Links
+# Community Regions
 
-A simple link page for Elastic community program managers -- one page per region, automatically published whenever you update a file.
+A simple link page for Elastic community program managers, one page per region, automatically published whenever you update a file.
 
 **Live pages**
-- 🇮🇳 India -- `/india`
-- 🇪🇺 Europe -- `/europe`
-- 🇺🇸 United States -- `/us`
-- 🇦🇺 Australia -- `/australia`
-- 🇸🇬 Singapore -- `/singapore`
+- India: `/india`
+- Europe: `/europe`
+- United States: `/us`
+- Australia: `/australia`
+- Singapore: `/singapore`
 
 ## How to update your region's links
 
@@ -19,7 +19,7 @@ Go to the [`regions/`](./regions/) folder and click on your file (e.g. `india.js
 
 **2. Click the pencil icon to edit**
 
-You'll see a pencil ✏️ icon in the top-right corner of the file. Click it.
+You'll see a pencil icon in the top-right corner of the file. Click it.
 
 **3. Update the links**
 
@@ -35,13 +35,13 @@ Change the `title` (what the button says) or the `url` (where it goes). You can 
 
 Scroll down, write a short note about what you changed (e.g. "Updated meetup link"), and click **Commit changes**.
 
-That's it -- your page will be live within about a minute.
+Your page will be live within about a minute.
 
 ## Adding or removing a link
 
 To **add** a link, copy an existing line and paste it below, then update the title and URL.
 
-To **remove** a link, delete its line (make sure the commas between items stay correct -- the last item in a list should have no trailing comma).
+To **remove** a link, delete its line. Make sure the commas between items stay correct as the last item in a list should have no trailing comma.
 
 ## Need help?
 
@@ -49,7 +49,7 @@ Reach out to Som or Kartikay and we'll be happy to help.
 
 ## Contributing
 
-Have an idea or spotted something that needs fixing? Feel free to open an issue in this repo -- we review them regularly and would love to hear your thoughts.
+Have an idea or spotted something that needs fixing? Feel free to open an issue in this repo and we'll take a look.
 
 ## Credits
 
