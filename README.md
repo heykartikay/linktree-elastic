@@ -53,4 +53,4 @@ Have an idea or spotted something that needs fixing? Feel free to open an issue 
 
 ## Credits
 
-Built on [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle, adapted for Elastic community use with multi-region support and analytics.
+Inspired by [LittleLink](https://github.com/sethcottle/littlelink) by Seth Cottle.
